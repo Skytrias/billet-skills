@@ -26,6 +26,7 @@ and run `billet-init` in your project.
 | `billet-split` | Split a big task into pieces that can be worked on in parallel |
 | `billet-start` | Work on a task, asking open questions first |
 | `billet-finish` | Check the work, close the task and add a changelog entry |
+| `billet-merge` | Merge a task's branch, check the result, close the task and remove its worktree |
 | `billet-cancel` | Cancel a task but keep its file |
 | `billet-list` | List open tasks |
 | `billet-leftovers` | Find unfinished work and add it as tasks |
