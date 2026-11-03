@@ -18,5 +18,7 @@ mentioned along the way, temporary workarounds, and newly exposed bugs.
 For each real leftover, update an existing open task when one already covers
 it; otherwise add a new task, `proposed` unless it is clearly `ready`, with
 the observed evidence in its current state. Ignore polish nobody asked for.
-If the work was a task still open, note the leftovers in its body. Report
-what was created or updated, and say plainly when nothing is left.
+If the work was a task still open, note the leftovers in its body. Record
+anything non-obvious learned as findings on that task, even a closed one, and
+correct findings that turned out wrong. Report what was created or updated,
+and say plainly when nothing is left.

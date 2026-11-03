@@ -9,9 +9,11 @@ Use only when explicitly invoked as `$billet-critique` or
 `/billet-critique`. Follow
 [../billet-add/format.md](../billet-add/format.md).
 
-Read the task and the code it touches, then challenge the plan:
+Read the task and the code it touches and search earlier tasks, then challenge
+the plan:
 
 - Does the outcome solve the real problem, or a symptom?
+- Did earlier tasks already try this, or learn something the plan ignores?
 - Do the stated current state and assumptions match the code?
 - Is the scope bounded, and is anything important missing from it?
 - Is there a simpler approach, or existing code to reuse?

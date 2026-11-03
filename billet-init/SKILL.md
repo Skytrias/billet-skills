@@ -14,8 +14,8 @@ them and only fill in what is missing; never renumber or rewrite tasks.
 
 Add a short section to the project's agent instructions file (`AGENTS.md`,
 `CLAUDE.md`, or whichever the project already uses; create `AGENTS.md` only
-when none exists). Skip it when the file already describes the task folder.
-Adapt the folder name to the format:
+when none exists). When the file already describes the task folder, add only
+what it is missing. Adapt the folder name to the format:
 
 ```
 ## Tasks
@@ -23,6 +23,11 @@ Adapt the folder name to the format:
 Project tasks live in `docs/tasks/`, one Markdown file per task with JSON
 frontmatter, managed by the `billet-*` skills. Edit task files only in the
 main checkout, never on a worktree branch.
+
+Before non-trivial work, search the task files, including closed ones, for
+the files and terms involved. Their Findings and Results record what was
+learned; the code wins when they disagree. Record non-obvious findings in the
+task as they come up.
 ```
 
 Do not create tasks. If the project keeps tasks somewhere else (a `TODO.md`,

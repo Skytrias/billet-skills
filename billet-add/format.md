@@ -75,6 +75,27 @@ order), a `---` line, then the Markdown body without a title heading.
 - Keep the JSON valid and pretty-printed whenever writing the file; people
   read these raw.
 
+## Knowledge
+
+Tasks are the project's record of what was learned; keep no separate notes
+folder.
+
+- Findings: a `## Findings` section holds what someone would otherwise have
+  to rediscover: a gotcha, a rejected approach, or a decision and its reason.
+  Write it when found, not at the end. Most tasks have none. Leave out what
+  the code or docs already show. A fact that applies to all future work in an
+  area goes in the project's agent instructions file instead.
+- Later: a closed task can still gain findings, each starting with the date.
+  When a finding turns out wrong, add a dated correction beside it.
+- Links: refer to another task as `[0011](0011-short-slug.md)`, not by bare ID.
+- Searching earlier tasks: search task files of every status, including `done`
+  and `canceled`, for the files, symbols, and terms involved; in a monorepo,
+  also search sibling projects' task folders. A file most tasks touch says
+  little, so rank by the most specific matches. Read only what the closest 3-5
+  tasks learned: Findings, Result, the cancel `reason`, and older notes or
+  decisions sections. Treat these as dated claims: check them against the code,
+  and the code wins.
+
 ## Main checkout
 
 Task files are only ever edited in the repository's main checkout (the first

@@ -10,6 +10,7 @@ Follow [../billet-add/format.md](../billet-add/format.md).
 
 Confirm the task's acceptance criteria and recorded verification actually
 passed. Add a `## Result` section with the completed outcome and
-verification, set `done` and `finished`, and clear `running`. Add a
-concise meaningful user-facing item under `Unreleased` in `CHANGELOG.md`. Do
-not close a partial or unverified task; state the blocker instead.
+verification, add any findings not yet recorded, link the tasks it built on,
+set `done` and `finished`, and clear `running`. Add a concise meaningful
+user-facing item under `Unreleased` in `CHANGELOG.md`. Do not close a partial
+or unverified task; state the blocker instead.
