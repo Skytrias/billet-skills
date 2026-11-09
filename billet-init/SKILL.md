@@ -24,8 +24,8 @@ Project tasks live in `docs/tasks/`, one Markdown file per task with JSON
 frontmatter, managed by the `billet-*` skills. Edit task files only in the
 main checkout, never on a worktree branch.
 
-Before non-trivial work, search the task files, including closed ones, for
-the files and terms involved. Their Findings and Results record what was
+Before non-trivial work, search the task files, including closed and
+archived ones, for the files and terms involved. Their Findings and Results record what was
 learned; the code wins when they disagree. Record non-obvious findings in the
 task as they come up.
 ```

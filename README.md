@@ -32,6 +32,7 @@ and run `billet-init` in your project.
 | `billet-leftovers` | Find unfinished work and add it as tasks |
 | `billet-groom` | Fix broken task data and tasks that no longer match the code |
 | `billet-recall` | Answer what earlier tasks and docs know about a topic |
+| `billet-archive` | Move long-closed tasks into the archive, still searchable |
 
 Tasks also remember what was learned. Agents note gotchas and decisions in a
 `## Findings` section as they work, and check earlier tasks before planning new

@@ -8,13 +8,15 @@ description: Clean up a project's task board, both its data and its accuracy aga
 Use only when explicitly invoked as `$billet-groom` or `/billet-groom`.
 Follow [../billet-add/format.md](../billet-add/format.md).
 
-Data: check every task file for valid, complete, pretty-printed frontmatter,
-filenames matching IDs, `next_id` above every ID, consistent areas, sensible
-`order`, `blocked_by` pointing at existing open tasks, and `running` set on
-tasks nobody is working on.
+Data: check every task file's header, never its body, for valid, complete,
+pretty-printed frontmatter, filenames matching IDs, duplicate IDs, `next_id`
+above every ID (archive included), consistent areas, sensible `order`,
+`blocked_by` pointing at existing tasks, and `running` set on tasks nobody is
+working on. Mention how many closed tasks qualify for `billet-archive`.
 
 Code: for each open task, compare its current state, scope, and approach with
-the code as it is now. Find tasks already done or made obsolete by other
+the code as it is now. With more than about 30 open tasks, go area by area and
+ask the user which areas to review first. Find tasks already done or made obsolete by other
 work, tasks whose assumptions no longer hold, duplicates, and `proposed`
 tasks whose questions are now answered.
 

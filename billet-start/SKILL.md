@@ -11,7 +11,8 @@ Follow [../billet-add/format.md](../billet-add/format.md).
 Read the task file, relevant code, and current worktree. Set `running` to now
 and `branch` to where the work happens, in the main checkout, before anything
 else. Search earlier tasks and link what this one builds on in its body.
-Validate that the task is ready and its `blocked_by` tasks are done; ask
+Validate that the task is ready and its `blocked_by` tasks are done (an
+archived blocker is closed); ask
 concise questions for decisions that materially affect the implementation,
 and set the task `ready` once they are answered. When work begins, set
 `in-progress` and `started` if unset. Perform the scoped work, record findings

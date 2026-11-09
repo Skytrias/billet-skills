@@ -8,11 +8,13 @@ description: Analyze a proposed project task and add it as one task file with JS
 Use only when explicitly invoked as `$billet-add` or `/billet-add`.
 Follow [format.md](format.md) for the folder, file layout, and all values.
 
-Read the open task files and relevant source/docs; avoid duplicates and reuse
-existing areas. Search earlier tasks and link related ones in the body. Take
-the ID from `next_id` in `tasks.json`, increment
-it, and create `NNNN-short-slug.md` with complete frontmatter and the default
-body sections. Record the observed current state, scope boundaries, likely
+Read the open tasks' titles and areas from their headers (see Reading the task
+folder in format.md), the few closest open tasks in full, and relevant
+source/docs; avoid duplicates and reuse existing areas. Search earlier tasks
+and link related ones in the body. Take the ID from `next_id` in `tasks.json`,
+check that no file with that ID exists anywhere in the task folder, archive
+included, increment `next_id`, and create `NNNN-short-slug.md` with complete
+frontmatter and the default body sections. Record the observed current state, scope boundaries, likely
 approach, acceptance criteria, verification, and material open questions.
 
 Use `ready` only when no unresolved decision materially changes execution;
