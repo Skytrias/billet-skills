@@ -16,6 +16,9 @@ just to make tasks smaller.
 
 When a split is justified, create the new tasks with their own outcome,
 scope, acceptance criteria, and verification, using `blocked_by` only for real
-ordering constraints. Cancel the original with a `reason` naming the new IDs,
-or keep it as a small integration task blocked by them. Report which pieces
-can run in parallel.
+ordering constraints. When the pieces serve the original's outcome, make the
+original a goal instead of canceling it: create the folder of its name and the
+new tasks in it (see Goals in format.md). A task already inside a goal splits
+into tasks beside it, never into a goal. Otherwise cancel the original with a
+`reason` naming the new IDs, or keep it as a small integration task blocked by
+them. Report which pieces can run in parallel.

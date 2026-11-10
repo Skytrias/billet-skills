@@ -12,7 +12,9 @@ above all.
 Work in the main checkout. Read only headers (see Reading the task folder).
 Find the tasks that qualify: `done` or `canceled`, with `finished` more than the
 Archive after days ago, or as many days as the user names. Hold back any that an
-open task names in `blocked_by` or links to. Present the count, the IDs and
+open task names in `blocked_by` or links to. A goal qualifies with its folder
+only when it and every task in its folder qualify; a task inside a goal never
+moves alone. Present the count, the IDs and
 titles, and each held-back task with the open task that needs it, and ask before
 moving anything.
 

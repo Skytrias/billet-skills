@@ -25,6 +25,9 @@ wording, language, or values; the skills follow whatever this file says.
 docs/tasks/
   tasks.json        {"next_id": 1, "statuses": [...]}
   0007-short-slug.md
+  0050-new-parser.md    a goal (see Goals)
+  0050-new-parser/      its tasks
+    0051-tokenizer.md
   archive/
     0002-older-closed-task.md
 ```
@@ -79,6 +82,25 @@ order), a `---` line, then the Markdown body without a title heading.
 - Keep the JSON valid and pretty-printed whenever writing the file; people
   read these raw.
 
+## Goals
+
+A goal groups many tasks toward one large aim, such as a new parser. It is an
+ordinary task file whose Outcome is the aim, with a folder of the same name
+beside it holding its tasks.
+
+- One level only: a goal's folder holds task files, never folders or goals.
+- IDs come from the project's one `tasks.json`, so they stay unique across
+  goals, and `blocked_by` and links work across folders
+  (`[0012](../0012-fix-cli-flags.md)` from inside a goal).
+- A task's goal is chosen when the task is created, like its file name.
+  Moving tasks into or out of a goal is a regrouping the user asks for, never
+  part of a status change.
+- A goal has its own status and is closed with `billet-finish` once its tasks
+  are closed. It is never started as one task: its tasks are.
+- Its progress, its tasks done out of those not canceled, is read from its
+  folder, never written into the goal.
+- `order` counts across the whole project, goals' folders included.
+
 ## Knowledge
 
 Tasks are the project's record of what was learned; keep no separate notes
@@ -109,8 +131,8 @@ tasks that matter.
 
 - A header is everything between the first two `---` lines. Its length varies,
   since arrays may take a line per item, so never read a fixed number of lines.
-- The live tasks are the task files in the task folder and its subfolders,
-  without `archive/`. List, pick, and count from them. Include the archive only
+- The live tasks are the task files in the task folder and its goal folders,
+  one level down, without `archive/`. List, pick, and count from them. Include the archive only
   to find a task by ID and to search what earlier tasks learned.
 - Never print every task body, or every header, in one command. Filter by
   status first, then print one short line per task.
@@ -166,6 +188,8 @@ years of work. `billet-archive` does it, and Billet can too.
   qualifies.
 - Never archive a task that an open task names in `blocked_by` or links to.
 - A folder beside a task with the same name as its file moves with it.
+- A goal moves with its folder, and only once the goal and every task in its
+  folder qualify. A task inside a goal never moves on its own.
 - An archived file keeps its name and content; `tasks.json` stays in the task
   folder. Nothing else is edited.
 - An archived task counts as closed wherever it is named: an archived blocker

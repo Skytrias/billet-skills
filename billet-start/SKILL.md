@@ -8,7 +8,9 @@ description: Start or continue implementing one project task, surfacing material
 Use only when explicitly invoked as `$billet-start` or `/billet-start`.
 Follow [../billet-add/format.md](../billet-add/format.md).
 
-Read the task file, relevant code, and current worktree. Set `running` to now
+Read the task file, relevant code, and current worktree. A goal (see Goals in
+format.md) is not started as one task: list its open tasks and ask which to
+start. Set `running` to now
 and `branch` to where the work happens, in the main checkout, before anything
 else. Search earlier tasks and link what this one builds on in its body.
 Validate that the task is ready and its `blocked_by` tasks are done (an

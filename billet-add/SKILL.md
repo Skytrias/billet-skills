@@ -19,3 +19,8 @@ approach, acceptance criteria, verification, and material open questions.
 
 Use `ready` only when no unresolved decision materially changes execution;
 otherwise `proposed`. Do not implement the task or infer a release version.
+
+When the user adds several related tasks at once toward one aim, ask whether to
+group them under a goal (see Goals in format.md): a new goal task with its
+folder, or an existing goal. Suggest a goal for a single task that is clearly
+many tasks' worth of work. A task in a goal is created in the goal's folder.

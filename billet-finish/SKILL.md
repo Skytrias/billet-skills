@@ -14,3 +14,7 @@ verification, add any findings not yet recorded, link the tasks it built on,
 set `done` and `finished`, and clear `running`. Add a concise meaningful
 user-facing item under `Unreleased` in `CHANGELOG.md`. Do not close a partial
 or unverified task; state the blocker instead.
+
+A goal closes only once every task in its folder is done or canceled. When the
+task closed was the last open one in its goal, say so and suggest finishing the
+goal.

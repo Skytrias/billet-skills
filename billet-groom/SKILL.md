@@ -11,8 +11,9 @@ Follow [../billet-add/format.md](../billet-add/format.md).
 Data: check every task file's header, never its body, for valid, complete,
 pretty-printed frontmatter, filenames matching IDs, duplicate IDs, `next_id`
 above every ID (archive included), consistent areas, sensible `order`,
-`blocked_by` pointing at existing tasks, and `running` set on tasks nobody is
-working on. Mention how many closed tasks qualify for `billet-archive`.
+`blocked_by` pointing at existing tasks, `running` set on tasks nobody is
+working on, and goal folders (see Goals): each with its goal file, none nested,
+and an open goal whose tasks are all closed. Mention how many closed tasks qualify for `billet-archive`.
 
 Code: for each open task, compare its current state, scope, and approach with
 the code as it is now. With more than about 30 open tasks, go area by area and

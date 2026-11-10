@@ -20,6 +20,7 @@ the plan:
 - Are the acceptance criteria observable, and does the verification prove them?
 - What breaks at the edges: errors, empty or large data, platforms, performance?
 - Is the hardness honest, and are dependencies captured in `blocked_by`?
+- Is it many tasks' worth of work that should be a goal (see Goals in format.md)?
 
 Report findings ranked by impact, each with a concrete suggested change. Edit
 the task only for changes the user accepts; move it to `proposed` if a

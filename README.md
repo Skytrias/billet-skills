@@ -58,6 +58,10 @@ The app follows the system's light or dark setting.
 
 The full list of fields is in [`billet-add/format.md`](billet-add/format.md).
 
+A large aim can be a goal: an ordinary task with a folder of the same name
+beside it that holds its tasks. `billet-add` offers one when you add many
+related tasks at once, and `billet-split` turns a big task into one.
+
 ## Changing them
 
 The skills are a starting point. Change them however you like.
