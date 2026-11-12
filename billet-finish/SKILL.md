@@ -28,7 +28,7 @@ questions:
 Other unfinished blockers don't keep a task `proposed`: `blocked_by` already
 tracks them, and `proposed` means an open decision. Keep closed IDs in
 `blocked_by` as history. Edit only the fields you change, in place, keeping
-the frontmatter's layout (arrays on one line).
+the frontmatter's existing layout rather than reserializing it.
 
 Report which tasks moved to `ready`, which of those are now fully unblocked
 (every blocker `done` or archived), and which stay `proposed` and why.
